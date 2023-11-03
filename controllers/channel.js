@@ -35,6 +35,6 @@ export const getAllChannels=async(req,res)=>{
         })
         res.status(200).json(allChannelDetails);
     } catch (error) {
-        res.status(404).json(message: error.message)
+        res.status(404).json({ message: error.message });
     }
 };
